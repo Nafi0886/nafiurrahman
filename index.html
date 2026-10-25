@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +15,7 @@
 <meta property="og:description" content="Modeling, videography and creative portfolio of Nafiur Rahman Nafi.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://nafi0886.github.io/nafiurrahman/">
+<meta property="og:image" content="https://nafi0886.github.io/nafiurrahman/nafi.jpg">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -23,31 +23,70 @@ html{scroll-behavior:smooth}
 body{background:#0b0b0d;color:#f5f5f5;font-family:Arial,Helvetica,sans-serif;line-height:1.7}
 a{text-decoration:none;color:inherit}
 .wrap{width:min(1100px,90%);margin:auto}
+
 header{padding:20px 0;border-bottom:1px solid #292930}
 nav{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
 .logo{font-size:21px;font-weight:800;letter-spacing:1px}
 .logo span,h1 span{color:#d5ff3f}
 .nav-links{display:flex;gap:18px;flex-wrap:wrap;font-size:14px;color:#aaa}
 .nav-links a:hover,.contact-link:hover{color:#d5ff3f}
+
 .hero{min-height:75vh;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:40px;padding-top:60px;padding-bottom:60px}
 .eyebrow,.label{color:#d5ff3f;text-transform:uppercase;letter-spacing:3px;font-size:12px;font-weight:bold}
 h1{font-size:clamp(40px,7vw,76px);line-height:1.08;margin:20px 0;letter-spacing:-2px}
 .hero p,.section-text{color:#aaa;max-width:650px}
+
 .buttons,.social-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
 .btn{display:inline-block;padding:12px 20px;border:1px solid #34343b;border-radius:7px;font-size:14px;font-weight:bold;transition:.2s}
 .btn:hover{transform:translateY(-2px)}
 .btn-primary{background:#d5ff3f;color:#111;border-color:#d5ff3f}
+
 .portrait{min-height:360px;border:1px solid #292930;border-radius:18px;background:radial-gradient(circle at center,#33333a,#151519 65%,#101013);display:flex;align-items:center;justify-content:center;text-align:center;padding:25px}
-.portrait-symbol{font-size:75px;color:#d5ff3f;font-weight:bold}
+
+.profile-pic{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+object-position:center;
+border:3px solid #d5ff3f;
+display:block;
+margin:0 auto 20px;
+}
+
+.portrait .profile-pic{
+width:210px;
+height:210px;
+}
+
 .portrait h2{font-size:20px;margin-top:10px}
 .portrait p{font-size:13px;color:#aaa;margin-top:8px}
+
 section.content-section{padding:75px 0;border-top:1px solid #292930}
 h2.section-title{font-size:clamp(30px,5vw,45px);line-height:1.2;margin:12px 0 25px}
+
+.about-profile{
+display:flex;
+align-items:center;
+gap:30px;
+margin-top:25px;
+}
+
+.about-profile .profile-pic{
+flex-shrink:0;
+margin:0;
+}
+
+.about-profile .section-text{
+max-width:650px;
+}
+
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
 .card{background:#151519;border:1px solid #292930;border-radius:12px;padding:25px}
 .card-number{color:#d5ff3f;font-size:13px;font-weight:bold}
 .card h3{margin:12px 0;font-size:21px}
 .card p{color:#aaa;font-size:14px}
+
 .contact-box{background:#151519;border:1px solid #292930;border-radius:14px;padding:25px;margin-top:25px}
 .contact-link{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:15px 0;border-bottom:1px solid #292930;transition:.2s}
 .contact-link:last-of-type{border-bottom:none}
@@ -56,19 +95,24 @@ h2.section-title{font-size:clamp(30px,5vw,45px);line-height:1.2;margin:12px 0 25
 .instagram{background:#e1306c;color:white}
 .facebook{background:#1877f2;color:white}
 .whatsapp{background:#25d366;color:#062b16}
+
 footer{border-top:1px solid #292930;padding:25px 0;color:#aaa;font-size:13px}
 .footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+
 @media(max-width:750px){
 .hero{grid-template-columns:1fr;min-height:auto;padding-top:45px;gap:30px}
-.portrait{min-height:270px}
+.portrait{min-height:300px}
 .grid{grid-template-columns:1fr}
 section.content-section{padding:55px 0}
 .nav-links{gap:12px}
+.about-profile{flex-direction:column;align-items:flex-start}
+.about-profile .profile-pic{margin:0 auto 10px}
 }
 </style>
 </head>
 
 <body>
+
 <header>
 <div class="wrap">
 <nav>
@@ -85,11 +129,16 @@ section.content-section{padding:55px 0}
 </header>
 
 <main>
+
+<!-- HERO SECTION -->
 <section class="wrap hero" id="home">
 <div>
 <div class="eyebrow">Model · Videographer · Creative</div>
+
 <h1>MD. Nafiur<br>Rahman <span>Nafi</span></h1>
+
 <p>A creative individual from Rajshahi, Bangladesh, passionate about modeling, videography, visual storytelling and building a personal brand.</p>
+
 <div class="buttons">
 <a class="btn btn-primary" href="#modeling">Explore My Work</a>
 <a class="btn" href="#contact">Connect With Me ↗</a>
@@ -98,75 +147,140 @@ section.content-section{padding:55px 0}
 
 <div class="portrait">
 <div>
-<div class="portrait-symbol">N.</div>
+<img src="nafi.jpg" alt="Nafiur Rahman Nafi" class="profile-pic">
 <h2>NAFIUR RAHMAN NAFI</h2>
 <p>Modeling · Videography · Creative Projects</p>
-<p>Your portrait can be added here later.</p>
 </div>
 </div>
 </section>
 
+<!-- ABOUT SECTION -->
 <section class="content-section" id="about">
 <div class="wrap">
+
 <div class="label">01 / About</div>
 <h2 class="section-title">A little about me.</h2>
+
+<div class="about-profile">
+<img src="nafi.jpg" alt="Nafiur Rahman Nafi" class="profile-pic">
+
 <p class="section-text">I'm Nafiur Rahman Nafi, based in Rajshahi, Bangladesh. I'm interested in modeling, videography, creative content and visual storytelling. I enjoy learning new skills, exploring creative ideas and continuously developing myself.</p>
 </div>
+
+</div>
 </section>
 
+<!-- MODELING SECTION -->
 <section class="content-section" id="modeling">
 <div class="wrap">
+
 <div class="label">02 / Modeling</div>
 <h2 class="section-title">In front of the camera.</h2>
+
 <p class="section-text">Interested in fashion, portrait and commercial modeling, with a focus on posing, expression, styling and camera confidence.</p>
+
 <div class="grid">
-<div class="card"><div class="card-number">01</div><h3>Fashion</h3><p>Fashion looks, styling and creative visual concepts.</p></div>
-<div class="card"><div class="card-number">02</div><h3>Portrait</h3><p>Portrait concepts focused on expression and composition.</p></div>
-<div class="card"><div class="card-number">03</div><h3>Commercial</h3><p>Brand campaigns, product shoots and collaborations.</p></div>
+<div class="card">
+<div class="card-number">01</div>
+<h3>Fashion</h3>
+<p>Fashion looks, styling and creative visual concepts.</p>
 </div>
+
+<div class="card">
+<div class="card-number">02</div>
+<h3>Portrait</h3>
+<p>Portrait concepts focused on expression and composition.</p>
+</div>
+
+<div class="card">
+<div class="card-number">03</div>
+<h3>Commercial</h3>
+<p>Brand campaigns, product shoots and collaborations.</p>
+</div>
+</div>
+
 </div>
 </section>
 
+<!-- VIDEOGRAPHY SECTION -->
 <section class="content-section" id="videography">
 <div class="wrap">
+
 <div class="label">03 / Videography</div>
 <h2 class="section-title">Stories through visuals.</h2>
+
 <p class="section-text">Interested in videography, cinematography and creative video content. My goal is to develop my visual storytelling skills and create engaging content for people and brands.</p>
+
 <div class="grid">
-<div class="card"><div class="card-number">01</div><h3>Videography</h3><p>Capturing moments and creating visual content.</p></div>
-<div class="card"><div class="card-number">02</div><h3>Cinematography</h3><p>Exploring framing, lighting and camera movement.</p></div>
-<div class="card"><div class="card-number">03</div><h3>Creative Content</h3><p>Developing ideas for social media and digital platforms.</p></div>
+<div class="card">
+<div class="card-number">01</div>
+<h3>Videography</h3>
+<p>Capturing moments and creating visual content.</p>
 </div>
+
+<div class="card">
+<div class="card-number">02</div>
+<h3>Cinematography</h3>
+<p>Exploring framing, lighting and camera movement.</p>
+</div>
+
+<div class="card">
+<div class="card-number">03</div>
+<h3>Creative Content</h3>
+<p>Developing ideas for social media and digital platforms.</p>
+</div>
+</div>
+
 </div>
 </section>
 
+<!-- FUTURE BRAND SECTION -->
 <section class="content-section" id="brand">
 <div class="wrap">
+
 <div class="label">04 / Future Projects</div>
 <h2 class="section-title">Building something of my own.</h2>
+
 <p class="section-text">I'm interested in developing a clothing brand and exploring fashion, design and digital business. More updates and projects will be added here as they develop.</p>
+
 </div>
 </section>
 
+<!-- CONTACT SECTION -->
 <section class="content-section" id="contact">
 <div class="wrap">
+
 <div class="label">05 / Contact</div>
 <h2 class="section-title">Let's connect.</h2>
+
 <p class="section-text">For modeling opportunities, creative collaborations and professional enquiries, connect with me through my social profiles.</p>
 
 <div class="contact-box">
-<a class="contact-link" href="https://www.instagram.com/_twinkle_o.o_/" target="_blank" rel="noopener noreferrer"><span>Instagram</span><span>↗</span></a>
-<a class="contact-link" href="https://www.facebook.com/share/1Dyx4ELTjy/" target="_blank" rel="noopener noreferrer"><span>Facebook</span><span>↗</span></a>
-<a class="contact-link" href="https://wa.me/8801612745217" target="_blank" rel="noopener noreferrer"><span>WhatsApp</span><span>↗</span></a>
+
+<a class="contact-link" href="https://www.instagram.com/_twinkle_o.o_/" target="_blank" rel="noopener noreferrer">
+<span>Instagram</span><span>↗</span>
+</a>
+
+<a class="contact-link" href="https://www.facebook.com/share/1Dyx4ELTjy/" target="_blank" rel="noopener noreferrer">
+<span>Facebook</span><span>↗</span>
+</a>
+
+<a class="contact-link" href="https://wa.me/8801612745217" target="_blank" rel="noopener noreferrer">
+<span>WhatsApp</span><span>↗</span>
+</a>
 
 <div class="social-buttons">
 <a class="social-btn instagram" href="https://www.instagram.com/_twinkle_o.o_/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+
 <a class="social-btn facebook" href="https://www.facebook.com/share/1Dyx4ELTjy/" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+
 <a class="social-btn whatsapp" href="https://wa.me/8801612745217" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
 </div>
+
 </div>
 </div>
 </section>
+
 </main>
 
 <footer>
@@ -179,6 +293,6 @@ section.content-section{padding:55px 0}
 <script>
 document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+
 </body>
 </html>
-```
