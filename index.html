@@ -1,153 +1,534 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="description" content="MD. Nafiur Rahman Nafi — Model, Videographer and Creative Content Creator from Rajshahi, Bangladesh.">
-<meta name="author" content="MD. Nafiur Rahman Nafi">
-<meta property="og:title" content="MD. Nafiur Rahman Nafi | Official Portfolio">
-<meta property="og:description" content="Modeling, videography and creative portfolio of Nafiur Rahman Nafi.">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#090909">
-  <meta name="description" content="Official personal portfolio of MD. Nafiur Rahman Nafi — modeling, visual storytelling and creative work.">
-  <title>MD. Nafiur Rahman Nafi | Personal Portfolio</title>
+
+  <title>MD. Nafiur Rahman Nafi | Official Portfolio</title>
+
+  <meta name="description" content="MD. Nafiur Rahman Nafi — Model, Videographer and Creative Content Creator from Rajshahi, Bangladesh. Explore his portfolio, modeling work, videography and creative projects.">
+  <meta name="author" content="MD. Nafiur Rahman Nafi">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="MD. Nafiur Rahman Nafi | Official Portfolio">
+  <meta property="og:description" content="Official portfolio of Nafiur Rahman Nafi featuring modeling, videography and creative projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nafi0886.github.io/nafiurrahman/">
+  <meta property="og:site_name" content="Nafiur Rahman Nafi">
+
+  <meta name="theme-color" content="#0b0b0d">
+
   <style>
-    :root{--bg:#090909;--panel:#111;--text:#f4f1eb;--muted:#a6a19a;--gold:#c8a96b;--line:rgba(255,255,255,.13)}
-    *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
-    a{color:inherit;text-decoration:none}
-    .wrap{width:min(1120px,90%);margin:auto}
-    header{position:fixed;top:0;left:0;right:0;z-index:5;background:rgba(9,9,9,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-    nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .brand{font-size:.9rem;letter-spacing:.12em;font-weight:700}.brand span{color:var(--gold)}
-    .navlinks{display:flex;gap:24px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:#d0ccc5}
-    .navlinks a:hover,.btn:hover{color:var(--gold)}
-    .hero{min-height:100vh;display:grid;align-items:center;padding:130px 0 70px;position:relative;overflow:hidden}
-    .hero:before{content:"";position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(200,169,107,.14),transparent 68%);right:-160px;top:8%;pointer-events:none}
-    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:55px}
-    .eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.24em;font-size:.72rem;margin-bottom:22px}
-    h1{font-size:clamp(2.7rem,6vw,5.8rem);line-height:.98;letter-spacing:-.055em;font-weight:800;text-transform:uppercase}
-    h1 span{color:var(--gold);display:block}
-    .intro{max-width:520px;color:var(--muted);margin:25px 0 32px;font-size:1.02rem}
-    .actions{display:flex;flex-wrap:wrap;gap:12px}
-    .btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border:1px solid var(--gold);font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;transition:.2s}
-    .btn.primary{background:var(--gold);color:#0a0a0a;font-weight:700}.btn.primary:hover{background:#e0c58f;color:#080808}
-    .portrait{min-height:520px;border:1px solid var(--line);position:relative;display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#1d1b18,#0d0d0d 60%);overflow:hidden}
-    .portrait:before{content:"";position:absolute;inset:18px;border:1px solid rgba(200,169,107,.35)}
-    .portrait-mark{text-align:center;z-index:1;padding:25px}
-    .portrait-mark .monogram{font-size:clamp(5rem,13vw,10rem);font-weight:800;letter-spacing:-.1em;color:rgba(200,169,107,.22);line-height:1}
-    .portrait-mark p{color:#c4bba9;text-transform:uppercase;letter-spacing:.18em;font-size:.7rem;margin-top:15px}
-    .photo-note{position:absolute;bottom:30px;left:30px;right:30px;color:#aaa;font-size:.72rem;text-align:center}
-    section{padding:100px 0;border-top:1px solid var(--line)}
-    .section-kicker{color:var(--gold);font-size:.7rem;text-transform:uppercase;letter-spacing:.22em;margin-bottom:12px}
-    h2{font-size:clamp(2rem,4vw,3.5rem);line-height:1.05;letter-spacing:-.04em;text-transform:uppercase;margin-bottom:24px}
-    .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}
-    .about-copy{color:var(--muted);max-width:650px}
-    .tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}
-    .tag{border:1px solid var(--line);padding:8px 13px;color:#d7d2c9;font-size:.75rem}
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:35px}
-    .card{min-height:210px;padding:26px;border:1px solid var(--line);background:linear-gradient(145deg,#151515,#0d0d0d);transition:.25s}
-    .card:hover{transform:translateY(-5px);border-color:rgba(200,169,107,.6)}
-    .card .num{font-size:.75rem;color:var(--gold);letter-spacing:.15em}
-    .card h3{font-size:1.2rem;margin:28px 0 10px;text-transform:uppercase}
-    .card p{font-size:.9rem;color:var(--muted)}
-    .future{border:1px solid rgba(200,169,107,.35);padding:35px;background:linear-gradient(100deg,rgba(200,169,107,.09),transparent);display:flex;align-items:center;justify-content:space-between;gap:30px;margin-top:30px}
-    .future p{color:var(--muted);max-width:650px}
-    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
-    .contact-links{display:grid;gap:12px}
-    .contact-link{padding:16px 18px;border:1px solid var(--line);display:flex;justify-content:space-between;gap:12px}
-    .contact-link span:last-child{color:var(--gold)}
-    footer{padding:25px 0;color:#777;font-size:.72rem;border-top:1px solid var(--line)}
-    footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-    @media(max-width:760px){nav{height:68px}.navlinks{gap:12px;font-size:.65rem}.brand{font-size:.75rem}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero-grid{gap:35px}.portrait{min-height:350px}.cards{grid-template-columns:1fr}.about-grid{gap:20px}.future{align-items:flex-start;flex-direction:column}section{padding:72px 0}}
-    @media(max-width:430px){.navlinks a:nth-child(2){display:none}.navlinks{gap:10px}.hero{padding-top:110px}}
+    :root {
+      --bg: #0b0b0d;
+      --card: #151519;
+      --text: #f5f5f5;
+      --muted: #a4a4ad;
+      --accent: #d5ff3f;
+      --border: #292930;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .wrap {
+      width: min(1100px, 90%);
+      margin: auto;
+    }
+
+    header {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 19px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      align-items: center;
+      gap: 45px;
+      padding-top: 65px;
+      padding-bottom: 65px;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(40px, 7vw, 76px);
+      line-height: 1.08;
+      margin: 20px 0;
+      letter-spacing: -2px;
+    }
+
+    h1 span {
+      color: var(--accent);
+    }
+
+    .hero p {
+      color: var(--muted);
+      max-width: 550px;
+      font-size: 16px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 14px;
+      border: 1px solid var(--border);
+      transition: 0.2s;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #101010;
+      border-color: var(--accent);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .portrait {
+      min-height: 390px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background:
+        radial-gradient(circle at 50% 35%, #34343b 0, #17171c 40%, #101013 75%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 25px;
+      overflow: hidden;
+    }
+
+    .portrait-inner {
+      max-width: 260px;
+    }
+
+    .portrait-symbol {
+      font-size: 70px;
+      color: var(--accent);
+      line-height: 1.2;
+    }
+
+    .portrait h2 {
+      margin-top: 15px;
+      font-size: 22px;
+    }
+
+    .portrait p {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+    section.content-section {
+      padding: 75px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .section-label {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    h2.section-title {
+      font-size: clamp(30px, 5vw, 45px);
+      line-height: 1.2;
+      margin: 12px 0 25px;
+    }
+
+    .section-text {
+      color: var(--muted);
+      max-width: 750px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 25px;
+    }
+
+    .card-number {
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .card h3 {
+      margin: 12px 0;
+      font-size: 21px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .contact-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px;
+      margin-top: 25px;
+    }
+
+    .contact-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      padding: 15px 0;
+      border-bottom: 1px solid var(--border);
+      transition: 0.2s;
+    }
+
+    .contact-link:last-child {
+      border-bottom: none;
+    }
+
+    .contact-link:hover {
+      color: var(--accent);
+    }
+
+    .social-buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 22px;
+    }
+
+    .social-btn {
+      display: inline-block;
+      padding: 11px 20px;
+      border-radius: 7px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .instagram {
+      background: #e1306c;
+      color: white;
+    }
+
+    .facebook {
+      background: #1877f2;
+      color: white;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 25px 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 750px) {
+      .hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding-top: 55px;
+        gap: 30px;
+      }
+
+      .portrait {
+        min-height: 280px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links {
+        gap: 12px;
+      }
+
+      section.content-section {
+        padding: 55px 0;
+      }
+    }
   </style>
 </head>
+
 <body>
+
   <header>
-    <nav class="wrap">
-      <a class="brand" href="#home">NAFI<span>.</span></a>
-      <div class="navlinks">
-        <a href="#about">About</a><a href="#work">Portfolio</a><a href="#future">Brand</a><a href="#contact">Contact</a>
-      </div>
-    </nav>
+    <div class="wrap">
+      <nav>
+        <a class="logo" href="#home">NAFI<span>.</span></a>
+
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#modeling">Modeling</a>
+          <a href="#videography">Videography</a>
+          <a href="#brand">Brand</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="hero" id="home" style="border-top:0">
-      <div class="wrap hero-grid">
-        <div>
-          <p class="eyebrow">Personal Portfolio · Creative Identity</p>
-          <h1>MD. Nafiur <span>Rahman Nafi</span></h1>
-          <p class="intro">Modeling, visual storytelling and creative work — building a personal brand with purpose, style and a distinct point of view.</p>
-          <div class="actions">
-            <a class="btn primary" href="#work">Explore my work ↗</a>
-            <a class="btn" href="#contact">Get in touch</a>
+
+    <section class="wrap hero" id="home">
+      <div>
+        <div class="eyebrow">Model · Videographer · Creative</div>
+
+        <h1>MD. Nafiur<br>Rahman <span>Nafi</span></h1>
+
+        <p>
+          A creative individual from Rajshahi, Bangladesh, passionate about
+          modeling, videography, visual storytelling and building a personal brand.
+        </p>
+
+        <div class="buttons">
+          <a class="btn btn-primary" href="#modeling">Explore My Work</a>
+          <a class="btn" href="#contact">Connect With Me ↗</a>
+        </div>
+      </div>
+
+      <div class="portrait">
+        <div class="portrait-inner">
+          <div class="portrait-symbol">N.</div>
+          <h2>NAFIUR RAHMAN NAFI</h2>
+          <p>Your personal portrait can be added here later.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="about">
+      <div class="wrap">
+        <div class="section-label">01 / About</div>
+        <h2 class="section-title">A little about me.</h2>
+
+        <p class="section-text">
+          I'm Nafiur Rahman Nafi, based in Rajshahi, Bangladesh.
+          I'm interested in modeling, videography, creative content and visual
+          storytelling. I enjoy learning new skills, exploring creative ideas
+          and continuously developing myself.
+        </p>
+      </div>
+    </section>
+
+    <section class="content-section" id="modeling">
+      <div class="wrap">
+        <div class="section-label">02 / Modeling</div>
+        <h2 class="section-title">In front of the camera.</h2>
+
+        <p class="section-text">
+          Interested in fashion, portrait and commercial modeling, with a focus
+          on posing, expression, styling and camera confidence.
+        </p>
+
+        <div class="grid">
+          <div class="card">
+            <div class="card-number">01</div>
+            <h3>Fashion</h3>
+            <p>Fashion-focused looks, styling and creative visual concepts.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-number">02</div>
+            <h3>Portrait</h3>
+            <p>Portrait concepts with attention to expression and composition.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-number">03</div>
+            <h3>Commercial</h3>
+            <p>Interested in brand campaigns, product shoots and collaborations.</p>
           </div>
         </div>
-        <div class="portrait" aria-label="Portrait placeholder">
-          <div class="portrait-mark"><div class="monogram">N.</div><p>Your portrait goes here</p></div>
-          <div class="photo-note">Replace this panel with your own high-quality photo when ready.</div>
-        </div>
       </div>
     </section>
 
-    <section id="about">
-      <div class="wrap about-grid">
-        <div><p class="section-kicker">01 / About</p><h2>More than<br>a profile.</h2></div>
-        <div class="about-copy">
-          <p>I’m MD. Nafiur Rahman Nafi. I’m interested in modeling, videography and creative production. This website is my home on the internet — a place to share selected work, connect with collaborators and grow my personal brand.</p>
-          <div class="tags"><span class="tag">Modeling</span><span class="tag">Videography</span><span class="tag">Creative Direction</span><span class="tag">Personal Branding</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="work">
+    <section class="content-section" id="videography">
       <div class="wrap">
-        <p class="section-kicker">02 / Selected interests</p>
-        <h2>What I do</h2>
-        <p class="about-copy">A starting point for your portfolio. Add your real photos, videos, projects and achievements as you build your collection.</p>
-        <div class="cards">
-          <article class="card"><span class="num">01 — VISUAL</span><h3>Modeling</h3><p>Portraits, fashion shoots, expressions and camera-focused work.</p></article>
-          <article class="card"><span class="num">02 — MOTION</span><h3>Videography</h3><p>Video content, visual storytelling and creative project highlights.</p></article>
-          <article class="card"><span class="num">03 — CREATIVE</span><h3>Collaborations</h3><p>Open to suitable creative projects, campaigns and brand partnerships.</p></article>
+        <div class="section-label">03 / Videography</div>
+        <h2 class="section-title">Stories through visuals.</h2>
+
+        <p class="section-text">
+          Interested in videography, cinematography and creative video content.
+          My goal is to develop my visual storytelling skills and create
+          engaging content for people and brands.
+        </p>
+
+        <div class="grid">
+          <div class="card">
+            <div class="card-number">01</div>
+            <h3>Videography</h3>
+            <p>Capturing moments and creating visual content.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-number">02</div>
+            <h3>Cinematography</h3>
+            <p>Exploring framing, composition, lighting and camera movement.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-number">03</div>
+            <h3>Creative Content</h3>
+            <p>Developing fresh ideas for social media and digital platforms.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="future">
+    <section class="content-section" id="brand">
       <div class="wrap">
-        <p class="section-kicker">03 / Coming next</p><h2>Built to grow.</h2>
-        <div class="future">
-          <div><h3 style="font-size:1.25rem;margin-bottom:8px">Your future clothing brand</h3><p>This space is ready for your clothing business when you launch. Later, you can add product collections, prices, size guides and order links.</p></div>
-          <span class="tag">Coming soon</span>
+        <div class="section-label">04 / Future Projects</div>
+        <h2 class="section-title">Building something of my own.</h2>
+
+        <p class="section-text">
+          I'm interested in developing a clothing brand and exploring
+          fashion, design and digital business. More updates and projects
+          will be added here as they develop.
+        </p>
+      </div>
+    </section>
+
+    <section class="content-section" id="contact">
+      <div class="wrap">
+        <div class="section-label">05 / Contact</div>
+        <h2 class="section-title">Let's connect.</h2>
+
+        <p class="section-text">
+          For modeling opportunities, creative collaborations and other
+          professional enquiries, connect with me through my social profiles.
+        </p>
+
+        <div class="contact-box">
+          <a class="contact-link"
+             href="https://www.instagram.com/_twinkle.o.o_/"
+             target="_blank"
+             rel="noopener noreferrer">
+            <span>Instagram</span>
+            <span>↗</span>
+          </a>
+
+          <a class="contact-link"
+             href="https://www.facebook.com/share/1Dyx4ELTjy/"
+             target="_blank"
+             rel="noopener noreferrer">
+            <span>Facebook</span>
+            <span>↗</span>
+          </a>
+
+          <div class="social-buttons">
+            <a class="social-btn instagram"
+               href="https://www.instagram.com/_twinkle.o.o_/"
+               target="_blank"
+               rel="noopener noreferrer">
+              Follow on Instagram
+            </a>
+
+            <a class="social-btn facebook"
+               href="https://www.facebook.com/share/1Dyx4ELTjy/"
+               target="_blank"
+               rel="noopener noreferrer">
+              Visit Facebook
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="contact">
-      <div class="wrap contact-grid">
-        <div><p class="section-kicker">04 / Contact</p><h2>Let’s create<br>something.</h2><p class="about-copy">For collaborations, creative projects or business enquiries, connect through your preferred platform.</p></div>
-        <div class="contact-links">
-          <a class="contact-link" href="#" onclick="return false"><span>Instagram — add your link</span><span>↗</span></a>
-          <a class="contact-link" href="#" onclick="return false"><span>Facebook — add your link</span><span>↗</span></a>
-          <a class="contact-link" href="#" onclick="return false"><span>WhatsApp — add your number/link</span><span>↗</span></a>
-          <a class="contact-link" href="mailto:hello@example.com"><span>Email — replace this address</span><span>↗</span></a>
-        </div>
-      </div>
-    </section>
   </main>
 
-  <footer><div class="wrap"><span>© <span id="year"></span> MD. Nafiur Rahman Nafi</span><span>Personal portfolio · Made to evolve</span></div></footer>
-  <<section id="social-links" style="text-align:center; padding:30px 20px;">
-  <h2>Connect With Me</h2>
-  <a href="https://www.instagram.com/_twinkle_o.o_/" target="_blank" rel="noopener noreferrer"
-     style="display:inline-block; margin:10px; padding:12px 24px; background:#E1306C; color:white; text-decoration:none; border-radius:8px;">
-    Instagram
-  </a>
-  <a href="https://www.facebook.com/share/1Dyx4ELTjy/" target="_blank" rel="noopener noreferrer"
-     style="display:inline-block; margin:10px; padding:12px 24px; background:#1877F2; color:white; text-decoration:none; border-radius:8px;">
-    Facebook
-  </a>
-</section>script>document.getElementById('year').textContent = new Date().getFullYear();</script></body>
+  <footer>
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> MD. Nafiur Rahman Nafi</span>
+      <span>Personal Portfolio · Made to Evolve</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
 </html>
